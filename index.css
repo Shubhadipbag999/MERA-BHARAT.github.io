@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("back.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.nav{
+    height:13vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,0.6);
+    display: flex;
+    align-items: center;
+}
+.mera_bharat{
+   margin-left: 8vw;
+    width: 50vw;
+    color: white;
+    font-size: 1.7vw;
+}
+.link{
+    width: 50vw;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.3vw;
+}
+.link a{
+    text-decoration: none;
+    margin-right: 4.5vw;
+    color: white;
+    text-transform: uppercase;
+}
+.link a:hover{
+    color: rgb(0, 252, 210);
+}
+.main{
+    height: 87vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.4);
+}
+.main div span{
+    font-size: 2.5vw;
+    color: white;
+}
+.ani{
+    font-size: 4.5vw;
+    color: white;
+    text-shadow: 3px 3px 8px black;
+}
+.small{
+    font-size: 1.5vw;
+    color: white;
+}
+.btn1{
+    width: 11vw;
+    height: 6vh;
+    font-size: 1vw;
+    border-radius: 0.5vw;
+    cursor: pointer;
+}
+.btn2{
+    width: 11vw;
+    height: 6vh;
+    color: white;
+    background-color: rgb(40, 206, 164);
+    border-radius: 0.5vw;
+    font-size: 1vw;
+    cursor: pointer;
+    /* font-weight: bold; */
+}
+.main div{
+    margin-top: 3vh;
+}
+.animation:after{
+    content:"";
+    font-size: 4.5vw;
+    animation: changetext 10s infinite linear;
+    color: #00b894;
+    text-shadow: 3px 3px 8px black;
+}
+@keyframes changetext {
+    0%{content: "Darjeeling";}
+    20%{content: "West Bengal";}
+    40%{content: "Jaipur";}
+    60%{content: "Kerala";}
+    80%{content: "Delhi";}
+    100%{content: "Mumbai";}
+
+}
+
+@media only screen and (max-width: 850px){
+    .mera_bharat{
+        /* height: inherit; */
+        width: 30vw;
+        font-size: 3.1vw;
+        /* background-color: red; */
+        font-weight: bold;
+    }
+    .link{
+        width: 70vw;
+        /* background-color: aquamarine; */
+        font-size: 2.6vw;
+    }
+    .main div span{
+        font-size: 4.5vw;
+    }
+    .ani{
+        font-size: 6.5vw;
+    }
+    .animation:after{
+        font-size: 6.5vw;
+    }
+    .small{
+        font-size: 3.5vw;
+    }
+    .btn1{
+        width: 25vw;
+        height: 5vh;
+        font-size: 2.5vw;
+    }
+    .btn2{
+        width: 25vw;
+        height: 5vh;
+        font-size: 2.5vw;
+    }
+    body{
+        background: url("back2.jpg");
+        background-size: cover;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    body{
+        background: url("back3.jpg");
+        background-size: cover;
+    }
+}
